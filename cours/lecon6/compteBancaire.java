@@ -4,7 +4,7 @@ public class compteBancaire {
 
   private String titulaire;
   protected double solde;
-  private int nbTransactionsSuccess = 0; 
+  private int nbTransactionsSuccess; 
 
   public compteBancaire (String name, double solde){
     this.solde = solde;
@@ -19,7 +19,7 @@ public class compteBancaire {
           this.solde -= montant;
 
           // incrémenter le nbTransactionsSuccess
-          this.nbTransactionsSuccess++;
+          this.nbTransactionsSuccess = this.nbTransactionsSuccess+1;
 
           // on ajout le montant au compte du receveur
           compte.solde += montant;

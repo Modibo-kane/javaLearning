@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Main {
   public static void main (String[] args){
-    CompteBancaire monCompte = new CompteEpargne("Modibo Kane", 500, 5000);
+    // CompteBancaire monCompte = new CompteEpargne("Modibo Kane", 500, 5000);
 
-    Parrainable p = new CompteEpargne("Tonton", 700, 5000);
+    // Parrainable p = new CompteEpargne("Tonton", 700, 5000);
 
     // p.genererCodeParrainage();
     // monCompte.afficherTypeCompte();
