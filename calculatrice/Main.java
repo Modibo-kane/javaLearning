@@ -53,8 +53,10 @@ public class Main {
   public static void main(String[] args){
 
     Scanner scanner = new Scanner(System.in);
-          
-    System.out.println("Menu:\r\n" + 
+        
+    int  choix = 0;
+    while (choix != 6) {
+      System.out.println("Menu:\r\n" + 
             "  1.Addition de plusieurs nombre,\r\n" + 
             "  2.Factorielle d'un nombre,\r\n" + 
             "  3.Vérifier si nombre premier,\r\n" +
@@ -62,7 +64,7 @@ public class Main {
             "  5.Mettre à la puissance,\r\n" + 
             "  6.Quitter");
 
-    int choix = scanner.nextInt();
+     choix = scanner.nextInt();
       switch(choix){
           case 1:
             System.out.print("vous voulez fair la somme de combien d'élément ?: ");
@@ -96,19 +98,19 @@ public class Main {
               break;
           case 5: 
           System.out.println("Veuillez saisir le nombre/chiffre");
-          int puiss = scanner.nextInt();
+          double puiss = scanner.nextInt();
           System.out.println("Veuillez saisir la puissance n");
           int n = scanner.nextInt();
                System.out.println(puiss +" a la puissanse "+ n + " = "+ puissance(puiss, n));
-            
               break;
           case 6: 
             System.out.println("Aurevoir à bientôt ------- Fin du programme ------");
               break;
           default: 
-              System.out.print("Choix non disponible. Veuillez réessayer: ");
+              System.out.println("Choix non disponible. Veuillez réessayer: ");
               break;
       }
+    }
        
     scanner.close();
   }
