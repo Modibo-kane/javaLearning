@@ -133,3 +133,4 @@ JSP (Java Server Pages) : Document textuel (HTML) contenant des fragments de cod
 **Si je veux stocker les règles de calcul d'un virement bancaire, dans quel conteneur dois-je placer ce code ?**
 
 *Réponse attendue :* Dans l'EJB Container (Business Tier), car c'est une logique métier critique nécessitant des services de transaction (JTA).
+
